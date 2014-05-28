@@ -42,7 +42,8 @@ public class Convert {
             
             
         }
-        br.readLine();
+        
+        bw.write(br.readLine() + "\n"); //write first line,features names 
         
         while((line = br.readLine()) != null)
         {

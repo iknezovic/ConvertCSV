@@ -15,7 +15,7 @@ public class CsvConverter {
     public static void main(String[] args) throws IOException  {
         
         System.err.println("Converting...");
-        Convert.randomPick(100000, 10000000, "ccFraud.csv", "dule100k");
+        Convert.randomPick(1000000, 10000000, "ccFraud.csv", "DataFraud1M.csv");
         System.err.println("Converted");
     }
 }
