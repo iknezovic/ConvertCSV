@@ -43,8 +43,8 @@ public class Convert {
             
         }
         
-        bw.write(br.readLine() + "\n"); //write first line,features names 
-        
+        //bw.write(br.readLine() + "\n"); //write first line,features names 
+        br.readLine();
         while((line = br.readLine()) != null)
         {
             //line = br.readLine();
