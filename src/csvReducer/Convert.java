@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package csvconverter;
+package csvReducer;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -44,10 +44,10 @@ public class Convert {
         }
         
         //bw.write(br.readLine() + "\n"); //write first line,features names 
-        br.readLine();
+        br.readLine();                      //skip one line,description fields
         while((line = br.readLine()) != null)
         {
-            //line = br.readLine();
+            
             String[] value = line.split(",");
             int lineNum = Integer.parseInt(value[0]);
             if(generated.contains(lineNum))

@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package csvconverter;
+package csvReducer;
 
 import java.io.IOException;
 
@@ -15,7 +15,7 @@ public class CsvConverter {
     public static void main(String[] args) throws IOException  {
         
         System.err.println("Converting...");
-        Convert.randomPick(100000, 10000000, "ccFraud.csv", "DataFraud100kWNF.csv");
+        Convert.randomPick(1000000, 10000000, "ccFraud.csv", "DataFraud1MWNF.csv");
         System.err.println("Converted");
     }
 }
