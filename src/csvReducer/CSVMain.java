@@ -9,14 +9,14 @@ package csvReducer;
 import java.io.IOException;
 
 
-public class CsvConverter {
+public class CSVMain {
 
- 
     public static void main(String[] args) throws IOException  {
         
-        System.err.println("Converting...");
-        Convert.randomPick(1000000, 10000000, "ccFraud.csv", "DataFraud1MWNF.csv");
-        System.err.println("Converted");
+        System.out.println("Converting...");
+        //number of data,number of max data,input,output
+        CSVSplit.randomPickTestTreningSplit(20000,"DataFraud100k.csv", "DataFraud100kTest.csv","DataFraud100kTrening.csv");
+        System.out.println("Converted");
     }
 }
     
